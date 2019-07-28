@@ -1,34 +1,75 @@
----
-layout: default
-pagination:
-  enabled: true
----
-<!-- The main content area -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<!-- CSS불러오기 -->
+	<style type="text/css">
+	    @import url("css/style.css");
+	</style>
 
-<!-- 인트로 문구 추가 -->
-<div class="intro">
-    Crafting Digital Experiences that<br>
-    help users.
+	<!-- 부트스트랩 css 불러오기 -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-</div>
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<div class="posts">
-  <div class="grid-xlarge">
-    <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
-
-      {% for post in site.posts %}
-        {% include post-card.html %}
-      {% endfor %}
-      
-    </div>
-  </div>
-
-  {% include pagination.html %}
-</div>
-
-<!-- jquery로 네비게이션에 현재 위치 표시 -->
-<!-- <script type="text/javascript">
-  $( document ).ready(function() {
-      $('.header__list li:first-child').addClass("active");
-  });
-</script> -->
+	<title>제철장.Very.Seasonal.Market</title>
+	
+</head>
+<body>
+	<div id="wrap">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<img src="img/img_logo_market.png" alt="logo_market" style="width: 100%">
+				<h3>Very.Seasonal.Market</h3>
+			</div>
+		</div>
+		<div id="program">
+			<div class="openstudio">
+				<h1 class="floor">
+					3F&4F
+				</h1>
+				<h1 class="place">
+					OPEN STUDIO
+				</h1>
+			</div>
+			<div class="rooftop">
+				<h1 class="floor">ROOF TOP
+				</h1>
+				<H1 class="place"> MARKET
+				</H1>
+			</div>	
+		</div>
+		<div id="info">
+			<div class="date">
+				<h1>2018.10.20.SAT.<br>
+				PM 01:00 - PM 6:00</h1>
+			</div>
+			<div class="name">
+				<h1>
+				Very<br>
+				Seasonal<br>
+				Market
+				<img src="img/img_logo_market.png" alt="logo_market" style="width:70px; margin-left: -12px; margin-bottom: -2px">
+				</h1>
+			</div>
+			<div class="loca">
+				<h3>
+					Location
+				</h3>
+				<p>서울특별시 광진구 능동로 151 이재철 도예공방 3F</p>
+				<p>151, Neungdong-ro, Gwangjin-gu, Seoul</p>
+				<h3>
+					Instagram
+				</h3>
+				<a href="https://www.instagram.com/very.seasonal.market/" class="insta">
+					https://www.instagram.com/very.seasonal.market/
+				</a>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="sanginhoi">
+				<img src="img/img_logo_people.png" alt="logo_people" style="width: 80px">
+		</div>
+	</div>
+</body>
+</html>
