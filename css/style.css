@@ -8,7 +8,21 @@ body{
 	/*margin: 0px;*/
 	overflow: none;
 	font-family: helvetica, "AppleSDGothicNeo", sans-serif;
+
 }
+/*드래그 컬러 변경*/
+::-moz-selection { /* Code for Firefox */
+  color: #ffffff;
+  background: #00b3ff;
+}
+
+::selection {
+  color: #ffffff;
+  background: #00b3ff;
+}
+
+
+
 #wrap {
 	margin: 0;
 }
@@ -26,7 +40,7 @@ body{
 }
 
 .container img{
-	max-width: 50%;
+	max-width: 30%;
 }
 
 .container h3{
@@ -96,7 +110,6 @@ body{
 }
 
 
-
 #info .details p, h3, a{
 	color : black;
 	margin-left: 5%;
@@ -132,7 +145,7 @@ body{
 
 
 /*미디어쿼리시작*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
 	body {
 		background-color: #ffffff;
 		font-size: 12px;
@@ -143,11 +156,18 @@ body{
 	font-size: 16px;
 	}
 
-	#info .date h1, .name h1{
+	#info .name h1{
 	font-size: 80px;
 	word-break: break-all;
     word-wrap: normal;
     padding : 0px;
+	}
+
+	#info .date h1{
+		font-size: 80px;
+		padding-left: 5%;
+		word-break: break-all;
+		word-wrap: normal;
 	}
 
 
@@ -184,7 +204,7 @@ body{
 		font-size: 10px;
 	}
 	.container img{
-	max-width: 54%;
+	max-width: 50%;
 	}
 
 	#mainvisual {
